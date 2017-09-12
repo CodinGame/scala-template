@@ -1,19 +1,10 @@
-title : Advanced Scala template
-
-# Table of content
+title: Scala Project
 plan:
-  - title: Welcome # Set the page title
-    statement: markdowns/welcome.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
-
-
-# Settings for your programming projects and the associated Docker images
+- title: Welcome
+  statement: markdowns/welcome.md
 projects:
   scala:
-    root: /scala-project # Set the root path to your Java project
-
-    # Set the docker image. This image runs sbt using this syntax:
-    # @[Code Editor Title]({"stubs": ["EditorFile1.scala", "EditorFile2.scala", ...], "command": "MyScalaTestClass"})
-    # More details here: https://github.com/TechDotIO/sbt-runner
-    runner: techio/sbt-runner:1.0.1-sbt-0.13.15
+    root: /scala-project
+    runner:
+      name: techio/sbt-runner
+      version: 1.0.1-sbt-0.13.15
